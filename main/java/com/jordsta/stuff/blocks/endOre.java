@@ -1,15 +1,13 @@
 package com.jordsta.stuff.blocks;
 
-import java.util.Random;
-
+import com.jordsta.stuff.JCreativeTabs;
 import com.jordsta.stuff.Main;
 import com.jordsta.stuff.Reference;
-
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import net.minecraft.util.RegistryNamespaced;
+
+import java.util.Random;
 
 public class endOre extends Block {
 
@@ -18,7 +16,7 @@ public class endOre extends Block {
 		super(Material.rock);
 		setBlockName("endOre");
 		setBlockTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));
-		setCreativeTab(Main.jordsutilsTab);
+		setCreativeTab(JCreativeTabs.TAB);
 		setHardness(20.0f);
 		setResistance(3.0f);
 		setHarvestLevel("pickaxe", 7);

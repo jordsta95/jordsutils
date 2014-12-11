@@ -1,13 +1,10 @@
 package com.jordsta.stuff.blocks;
 
-import com.jordsta.stuff.Main;
-import com.jordsta.stuff.Reference;
-
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockSand;
+import com.jordsta.stuff.JCreativeTabs;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.BlockStone;
-import net.minecraft.block.material.Material;
-import net.minecraft.init.Blocks;
+import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.world.World;
 
@@ -16,7 +13,7 @@ public class secretStone extends BlockStone {
 	public secretStone()
 	{
 		setBlockName("secretStone");
-		setCreativeTab(Main.jordsutilsTab);
+		setCreativeTab(JCreativeTabs.TAB);
 	}
 	
 	@Override
@@ -25,4 +22,10 @@ public class secretStone extends BlockStone {
         return null;
     }
 
+	@Override
+	@SideOnly(Side.CLIENT)
+	public void registerBlockIcons(IIconRegister iconRegister)
+	{
+		blockIcon = iconRegister.registerIcon("minecraft:stone");
+	}
 }
