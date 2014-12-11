@@ -1,6 +1,5 @@
 package com.jordsta.stuff;
 
-import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
 public class Proxy {

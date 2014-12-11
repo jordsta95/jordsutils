@@ -1,13 +1,12 @@
 package com.jordsta.stuff;
 
-import java.util.Random;
-
+import cpw.mods.fml.common.IWorldGenerator;
+import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
-import cpw.mods.fml.common.IWorldGenerator;
-import net.minecraft.block.Block;
-import net.minecraft.init.Blocks;
+
+import java.util.Random;
 
 
 public class endOreGen implements IWorldGenerator {

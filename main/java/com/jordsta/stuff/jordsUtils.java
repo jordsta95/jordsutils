@@ -1,7 +1,5 @@
 package com.jordsta.stuff;
 
-import javax.swing.plaf.basic.BasicComboBoxUI.ItemHandler;
-
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.creativetab.CreativeTabs;

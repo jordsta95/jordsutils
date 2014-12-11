@@ -1,14 +1,14 @@
 package com.jordsta.stuff.blocks;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.IProjectile;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.Vec3;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class InterdictionTile extends TileEntity
 {

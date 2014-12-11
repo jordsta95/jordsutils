@@ -1,28 +1,14 @@
 package com.jordsta.stuff.blocks;
 
-import static net.minecraftforge.common.util.ForgeDirection.EAST;
-import static net.minecraftforge.common.util.ForgeDirection.NORTH;
-import static net.minecraftforge.common.util.ForgeDirection.SOUTH;
-import static net.minecraftforge.common.util.ForgeDirection.WEST;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-
-import com.jordsta.stuff.Main;
+import com.jordsta.stuff.JCreativeTabs;
 import com.jordsta.stuff.Reference;
-
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockTorch;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.IIcon;
-import net.minecraft.util.MovingObjectPosition;
-import net.minecraft.util.Vec3;
 import net.minecraft.world.World;
-
-import java.util.Random;
 
 public class safetyTorch extends Block implements ITileEntityProvider
 {
@@ -30,7 +16,7 @@ public class safetyTorch extends Block implements ITileEntityProvider
 	public safetyTorch()
 	{
 		super(Material.glass);
-		this.setCreativeTab(Main.jordsutilsTab);
+		this.setCreativeTab(JCreativeTabs.TAB);
 		this.setBlockName("safetyTorch");
 		this.setLightLevel(4.0F);
 		this.setTickRandomly(true);
