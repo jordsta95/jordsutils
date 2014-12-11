@@ -1,0 +1,16 @@
+[
+{
+  "modid": "currency",
+  "name": "Currency",
+  "description": "A mod that adds items and ores into minecraft which can be used as a currency for a server/custom map",
+  "version": "0.0.1",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["jordsta95"],
+  "credits": "Thomaz for textures",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
